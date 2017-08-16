@@ -6,13 +6,24 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
         <!--Progress Bar -->
         <ProgressBar 
-            x:Name="progressbar1" 
+            x:Name="progressbar_increaseByClick" 
             Grid.Column="0" 
             Grid.Row="0"
+            WidthRequest="300"
+            HeightRequest="300" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+        <!--Increase By Time-->
+         <ProgressBar 
+            x:Name="progressbar_increaseByTime" 
+            Grid.Column="0" 
+            Grid.Row="1"
             WidthRequest="300"
             HeightRequest="300" 
             VerticalOptions="Center" 
@@ -21,7 +32,7 @@
         <Button 
             Clicked="Increase_Clicked" 
             HeightRequest="100" 
-            Grid.Row="1" 
+            Grid.Row="2" 
             Text="Increase Bar"/>
     </Grid>
 </ContentPage>
